@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Oussama",
+  lastName: "Kabba",
+  name: `Oussama Kabba`,
+  role: "Software Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "osamakabba19@gmail.com",
+  location: "Europe/Rome", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Italian"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -25,25 +25,13 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/Cunzaiaa",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/oussama-kabba-447456250/",
     essential: true,
   },
   {
@@ -76,7 +64,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Oussama, a software engineer at <Text as="span" size="xl" weight="strong">Cegeka SPA</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
 </>
   ),
 };
@@ -93,18 +81,14 @@ const about: About = {
   avatar: {
     display: true,
   },
-  calendar: {
-    display: true,
-    link: "https://cal.com",
-  },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Junior Software Engineer specializing in Java and backend development, with hands-on experience in
+        microservices, Spring Boot, and database-driven applications. Experienced in building real-world projects and
+        collaborating in agile environments. Actively seeking junior software developer opportunities.
       </>
     ),
   },
@@ -113,41 +97,29 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Cegeka SPA",
+        timeframe: "03/2026 - Present",
+        role: "Junior Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Contributed to the development of a large-scale microservices system using Java and Spring Boot.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Supported CI/CD pipelines and deployments through GitLab and Kubernetes.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "BetStarters",
+        timeframe: "02/2022 - 03/2022",
+        role: "Front-end Developer Intern",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Improved website usability and stability by addressing critical UI bugs using JavaScript and modern front-
+            end practices.
           </>,
         ],
         images: [],
@@ -159,12 +131,13 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of Oriental Piedmont",
+        grade: "110 cum laude",
+        description: <><strong>Relevant Coursework</strong>: Algorithms | Computer Networks | Database and Information Systems | Software Engineering | Web Programming.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Polish-Japanese Academy of Information Technology, Erasmus+",
+        description: <><strong>Relevant Coursework</strong>: Machine Learning | Machine Vision | Mobile Programming | Cyber Security.</>,
       },
     ],
   },

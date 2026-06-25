@@ -105,7 +105,7 @@ export interface Home extends BasePageConfig {
 
 /**
  * About page configuration.
- * @description Configuration for the About page, including sections for table of contents, avatar, calendar, introduction, work experience, studies, and technical skills.
+ * @description Configuration for the About page, including sections for table of contents, avatar, introduction, work experience, studies, and technical skills.
  */
 export interface About extends BasePageConfig {
   /** Table of contents configuration */
@@ -119,13 +119,6 @@ export interface About extends BasePageConfig {
   avatar: {
     /** Whether to display the avatar */
     display: boolean;
-  };
-  /** Calendar section configuration */
-  calendar: {
-    /** Whether to display the calendar */
-    display: boolean;
-    /** Link to the calendar */
-    link: string;
   };
   /** Introduction section */
   intro: {
@@ -177,6 +170,8 @@ export interface About extends BasePageConfig {
       name: string;
       /** Description of studies */
       description: React.ReactNode;
+      /** Grade or honors received */
+      grade?: string;
     }>;
   };
   /** Technical skills section */
