@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "Kabba",
   name: `Oussama Kabba`,
   role: "Software Engineer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar.PNG",
   email: "osamakabba19@gmail.com",
   location: "Europe/Rome", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Italian", "Arabic"], // optional: Leave the array empty if you don't want to display languages
@@ -89,7 +89,7 @@ const about: About = {
     experiences: [
       {
         company: "Cegeka SPA",
-        timeframe: "03/2026 - Present",
+        timeframe: "09/2025 - Present",
         role: "Junior Software Engineer",
         achievements: [
           <>
@@ -133,7 +133,7 @@ const about: About = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
