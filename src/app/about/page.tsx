@@ -59,6 +59,9 @@ export default function About() {
         description={about.description}
         path={about.path}
         image={`/api/og/generate?title=${encodeURIComponent(about.title)}`}
+        sameAs={social
+          .filter((item) => item.link && !item.link.startsWith("mailto:"))
+          .map((item) => item.link as string)}
         author={{
           name: person.name,
           url: `${baseURL}${about.path}`,

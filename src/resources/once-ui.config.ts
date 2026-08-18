@@ -11,9 +11,10 @@ import {
   StyleConfig,
 } from "@/types";
 import { home } from "./index";
+import { person } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://oussama.kabba-portfolio.com";
+const baseURL: string = "https://portfolio-tan-kappa-84.vercel.app/";
 
 const routes: RoutesConfig = {
   "/": true,
@@ -143,10 +144,10 @@ const effects: EffectsConfig = {
 // default schema data
 const schema: SchemaConfig = {
   logo: "",
-  type: "Organization",
-  name: "Once UI",
+  type: "Person",
+  name: person.name,
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: person.email,
 };
 
 // social links
