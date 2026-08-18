@@ -16,8 +16,8 @@ import { home } from "./index";
 const baseURL: string = "https://oussama.kabba-portfolio.com";
 
 const routes: RoutesConfig = {
-  "/": false,
-  "/about": true,
+  "/": true,
+  "/about": false,
   "/work": false,
   "/blog": false,
   "/gallery": false,
