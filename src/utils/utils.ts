@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-// @ts-ignore - no type declarations available for gray-matter
 import matter from "gray-matter";
 
 type Team = {
